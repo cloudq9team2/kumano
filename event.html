@@ -1,0 +1,21 @@
+<html>
+<script src="jquery.1.6.4.min.js"></script>
+<body>
+  <div id="clickme">CLICK ME</div>
+</body>
+</html>
+<script>
+// jquery code
+$( document).ready( function() { 
+$("#clickme")
+.bind("mouseenter", function() {
+console.log("the mouse entered to CLICK ME.");
+})
+.bind("mouseleave", function() {
+console.log("the mouse leaved from CLICK ME.");
+})
+.bind("click", function() {
+console.log("CLICKE ME clicked.");
+})
+})
+</script>
